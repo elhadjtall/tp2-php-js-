@@ -124,3 +124,16 @@ form {
 .form-control::placeholder{
     color: rgb(134, 255, 249 /65%);
 }
+.formButton {
+    border: 1px solid transparent;
+    padding: 1rem 3rem;
+    background-color: #94f7e6;
+    border-radius: 50px;
+    margin-top: 8px;
+    font-size: 20px;
+    transition: transform 0.3s, boxshadow 0.3s;
+}
+.formButton:hover{
+    box-shadow: 3px 5px 115px #94f7e6;
+    transform: translateY(-5px);
+}
