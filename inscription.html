@@ -49,7 +49,21 @@
         </section>
     </div>
     <script>
-        
+        const displayform = _('displayForm');
+        const forlogin = _('forLogin');
+        const loginForm = _('loginForm');
+        const forRegister = _('forRegister');
+        const registerForm = _('registerForm');
+        const formContainer = _('formContainer');
+        displayform.addEventListener('click', showform);
+
+        function _(e) {
+            return document.getElementById(e);
+        }
+
+        function showform(){
+            document.querySelector('.form-wrapper .card').classList.toggle('show');
+        }
     </script>
 </body>
 </html>

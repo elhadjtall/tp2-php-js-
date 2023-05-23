@@ -54,6 +54,7 @@ button.btn{
     margin-top: 0;
     border-color: transparent;
     transition: border-color .3s;
+    border-radius: 4px 0 4px 0;
 }
 section{
     display: flex;
@@ -71,6 +72,11 @@ section{
     width: 360px;
     padding: 20px;
     background-color: rgb(0 0 0 /35%);
+    visibility: opacity 0.3s, visibility 0.3s;
+}
+.card.show {
+    visibility: visible;
+    opacity: 1;
 }
 .card-header {
     display: flex;
@@ -94,7 +100,7 @@ section{
 .card-header .form-header .active{
     box-shadow: inset 1px 1px 2px rgb(19 210 177 / 55%), inset -1px 1px 2px rgb(19 210 177 / 55%), inset -1px -1px 2px rgb(19 210 177 / 55%), 
         inset 1px -1px 2px rgb(19 210 177 / 55%);
-    border-color: #94f7e6;
+        border-color: #94f7e6;
     transition: border-color .3s, box-shadow .3s;
 }
 
@@ -134,6 +140,6 @@ form {
     transition: transform 0.3s, boxshadow 0.3s;
 }
 .formButton:hover{
-    box-shadow: 3px 5px 115px #94f7e6;
+    box-shadow: 3px 5px 15px #94f7e6;
     transform: translateY(-5px);
 }
