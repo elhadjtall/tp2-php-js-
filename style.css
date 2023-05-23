@@ -82,3 +82,16 @@ section{
     box-shadow: 2px 3px 7px #d3f7ff71;
     border-radius: 50px;
 }
+.card-header .form-header{
+    flex: 50%;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+.card-header .form-header .active{
+    box-shadow: inset 1px 1px 2px rgb(19 210 177 / 55%), inset -1px 1px 2px rgb(19 210 177 / 55%), inset -1px -1px 2px rgb(19 210 177 / 55%), 
+        inset 1px -1px 2px rgb(19 210 177 / 55%);
+}
