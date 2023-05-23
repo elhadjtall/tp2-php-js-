@@ -94,4 +94,33 @@ section{
 .card-header .form-header .active{
     box-shadow: inset 1px 1px 2px rgb(19 210 177 / 55%), inset -1px 1px 2px rgb(19 210 177 / 55%), inset -1px -1px 2px rgb(19 210 177 / 55%), 
         inset 1px -1px 2px rgb(19 210 177 / 55%);
+    border-color: #94f7e6;
+    transition: border-color .3s, box-shadow .3s;
+}
+
+.card-body {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px 0;
+    text-align: center;
+}
+form {
+    flex: 0 0 100%;
+}
+
+.toggleForm{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+.form-control {
+    width: 100%;
+    border-bottom: 1px solid rgb(134, 255, 249 /65%);
+    background: none;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.form-control::placeholder{
+    color: rgb(134, 255, 249 /65%);
 }
