@@ -85,6 +85,10 @@ body {
     padding: 0 35px 0 5px;
     color: #fff;
 }
+.input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
 .input-box label{
     position: absolute;
     color: #fff;
@@ -93,5 +97,32 @@ body {
     transform: translateY(-50%);
     font-size: 16px;
     pointer-events: none;
-    transform: .3s;
+    transition: .3s;
+}
+.group {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.group a {
+    position: relative;
+    top: -15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+button {
+    height: 40px;
+    width: 90px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+button:focus{
+    color: #fff;
+    background-color: #0c1022;
+    border: 2px solid;
 }
