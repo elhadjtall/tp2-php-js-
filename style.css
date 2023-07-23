@@ -58,3 +58,9 @@ body {
     z-index: 1;
     border-radius: 10px;
 }
+.form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
