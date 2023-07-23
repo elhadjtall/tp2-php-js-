@@ -2,68 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Formulaire</title>
+    <title>HASH TECHIE</title>
 </head>
 <body>
     <div class="container">
-        <nav>
-            <a href="#" class="logo">Oumar</a>
-            <ul>
-                <li><a href="#">Lien1</a></li>
-                <li><a href="#">Lien2</a></li>
-                <li><a href="#">Lien3</a></li>
-                <li><a href="#">Lien4</a></li>
-                <li>
-                    <button class="btn" id="displayform">Se connecter</button>
-                </li>
-            </ul>
-
-        </nav>
-        <section>
-            <div class="sec-container">
-                <div class="form-wrapper">
-                     <div class="card">
-                     <div class="card-header">
-                    <div id="forlogin" class="form-header active"> Se connecter</div>
-                    <div id="forRegister" class="form-header">S'inscrire</div>
+        <div class="ima">
+            <div class="form-box">
+                <h2>Register</h2>
+                <div class="input-box">
+                    <input type="text">
+                    <label >User name</label>
                 </div>
-                <div class="card-body" id="formContainer">
-                    <form action="" id="formLogin">
-                        <input type="text" class="form-control" placeholder="@utilisateur">
-                        <input type="password" class="form-control" placeholder="@Mot de passe" name="" id="">
-                        <button class="formButton">Connexion</button>
-                    </form>
-                    <form action="" id="formLogin" class="toggleForm">
-                        <input type="text" class="form-control" name="nom" id="" placeholder="@utilisateur">
-                        <input type="password" class="form-control" placeholder="@Mot de passe" name="" id="">
-                        <input type="password" class="form-control" placeholder="@Confirmer mot de passe" name="" id="">
-                        <button class="formButton">Connexion</button>
-                    </form>
-                        </div>
-                      </div>
-                   </div>
+                <div class="input-box">
+                    <input type="text">
+                    <label>Email</label>
                 </div>
-        </section>
+                <div class="input-box">
+                    <input type="password">
+                    <label>Password</label>
+                </div>
+            </div>
+        </div>
     </div>
-    <script>
-        const displayform = _('displayForm');
-        const forlogin = _('forLogin');
-        const loginForm = _('loginForm');
-        const forRegister = _('forRegister');
-        const registerForm = _('registerForm');
-        const formContainer = _('formContainer');
-        displayform.addEventListener('click', showform);
-
-        function _(e) {
-            return document.getElementById(e);
-        }
-
-        function showform(){
-            document.querySelector('.form-wrapper .card').classList.toggle('show');
-        }
-    </script>
 </body>
 </html>

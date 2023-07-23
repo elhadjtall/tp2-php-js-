@@ -1,145 +1,53 @@
-*::before,
-*::before{
-    box-sizing: border-box;
-    font-family: 'systm-ul', sans-serif;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
     padding: 0;
-    outline: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-.container{
+body {
+    display: flex;
+    background: #0c1022;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    overflow: hidden;
+}
+.container {
     position: relative;
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.4), transparent), url('fond.jpg') center center no-repeat;
-    background-size: cover;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 5px 0;
-}
-nav .logo{
-    width: 110px;
-    cursor: pointer;
-    font-size: 30px;
-    font-style: oblique;
-    text-decoration: none;
-    color: white;
-}
-nav ul{
+    width: 350px;
+    height: 500px;
+    background: rgb(0, 0, 0, 0.75);
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 40px;
-    text-align: right;
-    flex: 1;
-    list-style-type: none;
+    padding-inline: 32px;
+    overflow: hidden;
 }
-nav ul li{
-    margin-right: 10px;    
+.container::before {
+    content: "";
+    position: absolute;
+    height: 650px;
+    width: 650px;
+    background: conic-gradient(transparent,transparent,transparent,#d400d4);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
 }
-nav ul li a {
-    padding: 10px 20px;
-    text-decoration: none;
-    color: White;
-    font-size: 16px;
-}
-button.btn{
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
-    margin-top: 0;
-    border-color: transparent;
-    transition: border-color .3s;
-    border-radius: 4px 0 4px 0;
-}
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0;
-}
-.form-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: auto;
-}
-.form-wrapper .card{
-    width: 360px;
-    padding: 20px;
-    background-color: rgb(0 0 0 /35%);
-    visibility: opacity 0.3s, visibility 0.3s;
-}
-.card.show {
-    visibility: visible;
-    opacity: 1;
-}
-.card-header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 30px 20px 0;
-    font-size: 1.1rem;
-    color: #94f7e6;
-    box-shadow: 2px 3px 7px #d3f7ff71;
-    border-radius: 50px;
-}
-.card-header .form-header{
-    flex: 50%;
-    text-align: center;
-    padding: 10px 0;
-    border: 1px solid transparent;
-    border-radius: 50px;
-    user-select: none;
-    cursor: pointer;
-}
-.card-header .form-header .active{
-    box-shadow: inset 1px 1px 2px rgb(19 210 177 / 55%), inset -1px 1px 2px rgb(19 210 177 / 55%), inset -1px -1px 2px rgb(19 210 177 / 55%), 
-        inset 1px -1px 2px rgb(19 210 177 / 55%);
-        border-color: #94f7e6;
-    transition: border-color .3s, box-shadow .3s;
+.container::after {
+    content: "";
+    position: absolute;
+    height: 650px;
+    width: 650px;
+    background: conic-gradient(transparent,transparent,transparent,#00cfff);
+    animation: animate 4s linear infinite;
 }
 
-.card-body {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 40px 0;
-    text-align: center;
-}
-form {
-    flex: 0 0 100%;
-}
-
-.toggleForm{
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
-}
-.form-control {
-    width: 100%;
-    border-bottom: 1px solid rgb(134, 255, 249 /65%);
-    background: none;
-    padding: 10px 5px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-.form-control::placeholder{
-    color: rgb(134, 255, 249 /65%);
-}
-.formButton {
-    border: 1px solid transparent;
-    padding: 1rem 3rem;
-    background-color: #94f7e6;
-    border-radius: 50px;
-    margin-top: 8px;
-    font-size: 20px;
-    transition: transform 0.3s, boxshadow 0.3s;
-}
-.formButton:hover{
-    box-shadow: 3px 5px 15px #94f7e6;
-    transform: translateY(-5px);
+@keyframes animate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
