@@ -51,3 +51,10 @@ body {
         transform: rotate(360deg);
     }
 }
+.image {
+    position: absolute;
+    inset: 5px;
+    background-color: #0c1022;
+    z-index: 1;
+    border-radius: 10px;
+}
